@@ -2,13 +2,13 @@
 
 namespace CL\PsrCache\Test;
 
-use CL\PsrCache\DummyItemPool;
-use CL\PsrCache\DummyItem;
+use CL\PsrCache\NullItemPool;
+use CL\PsrCache\NullItem;
 
 /**
- * @coversDefaultClass CL\PsrCache\DummyItemPool
+ * @coversDefaultClass CL\PsrCache\NullItemPool
  */
-class DummyItemPoolTest extends AbstractTestCase
+class NullItemPoolTest extends AbstractTestCase
 {
     /**
      * @covers ::__construct
@@ -17,13 +17,13 @@ class DummyItemPoolTest extends AbstractTestCase
      */
     public function testTest()
     {
-        $pool = new DummyItemPool();
+        $pool = new NullItemPool();
 
         $this->assertInstanceOf('CL\PsrCache\CacheItemPoolInterface', $pool);
 
         $item = $pool->getItem('item');
 
-        $this->assertEquals(new DummyItem('item'), $item);
+        $this->assertEquals(new NullItem('item'), $item);
 
         $pool->clear();
     }

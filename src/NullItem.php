@@ -7,7 +7,7 @@ namespace CL\PsrCache;
  * @copyright 2014, Clippings Ltd.
  * @license   http://spdx.org/licenses/BSD-3-Clause
  */
-class DummyItem implements CacheItemInterface
+class NullItem implements CacheItemInterface
 {
     private $key;
     private $value;

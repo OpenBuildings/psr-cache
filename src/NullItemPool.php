@@ -7,13 +7,8 @@ namespace CL\PsrCache;
  * @copyright 2014, Clippings Ltd.
  * @license   http://spdx.org/licenses/BSD-3-Clause
  */
-class DummyItemPool implements CacheItemPoolInterface
+class NullItemPool implements CacheItemPoolInterface
 {
-    public function __construct()
-    {
-    }
-
-
     public function getItem($key)
     {
         return new DummyItem($key);
@@ -21,5 +16,6 @@ class DummyItemPool implements CacheItemPoolInterface
 
     public function clear()
     {
+        return true;
     }
 }
