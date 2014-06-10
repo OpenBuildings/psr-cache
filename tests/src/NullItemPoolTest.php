@@ -11,7 +11,6 @@ use CL\PsrCache\NullItem;
 class NullItemPoolTest extends AbstractTestCase
 {
     /**
-     * @covers ::__construct
      * @covers ::getItem
      * @covers ::clear
      */

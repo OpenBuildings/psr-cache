@@ -11,7 +11,7 @@ class NullItemPool implements CacheItemPoolInterface
 {
     public function getItem($key)
     {
-        return new DummyItem($key);
+        return new NullItem($key);
     }
 
     public function clear()
