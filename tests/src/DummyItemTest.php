@@ -2,7 +2,7 @@
 
 namespace CL\PsrCache\Test;
 
-use CL\PsrCache\DummyPool;
+use CL\PsrCache\DummyItemPool;
 use CL\PsrCache\DummyItem;
 
 /**
@@ -23,6 +23,8 @@ class DummyItemTest extends AbstractTestCase
     public function testTest()
     {
         $item = new DummyItem('key1');
+
+        $this->assertInstanceOf('CL\PsrCache\CacheItemInterface', $item);
 
         $this->assertEquals('key1', $item->getKey());
         $this->assertFalse($item->isHit());

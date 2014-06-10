@@ -7,7 +7,7 @@ namespace CL\PsrCache;
  * @copyright 2014, Clippings Ltd.
  * @license   http://spdx.org/licenses/BSD-3-Clause
  */
-interface CachePoolInterface
+interface CacheItemPoolInterface
 {
     public function getItem($key);
 
