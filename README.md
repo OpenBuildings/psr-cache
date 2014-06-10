@@ -8,8 +8,8 @@ Psr Cache
 
 Psr Cache Interfaces and dummy implementation
 
-Usage
------
+This is a copy of the PSR Cache draft along with a "null" implementation.
+Originating from https://github.com/Crell/Cache Draft
 
 License
 -------
