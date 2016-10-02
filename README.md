@@ -1,4 +1,4 @@
-Psr Cache
+PSR-6 Cache
 =========
 
 [![Build Status](https://travis-ci.org/clippings/psr-cache.png?branch=master)](https://travis-ci.org/clippings/psr-cache)
